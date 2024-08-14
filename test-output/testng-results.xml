@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-12T23:38:51 IST" name="Default suite" finished-at="2024-08-12T23:39:11 IST" duration-ms="19639">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNgTestRunner@196a42c3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-08-12T23:38:51 IST" name="Default test" finished-at="2024-08-12T23:39:11 IST" duration-ms="19639">
+      <class name="cucumber.TestNgTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNgTestRunner@196a42c3]" started-at="2024-08-12T23:38:51 IST" name="setUpClass" finished-at="2024-08-12T23:38:52 IST" duration-ms="575" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@25d0cb3a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNgTestRunner@196a42c3]" started-at="2024-08-12T23:38:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-08-12T23:39:01 IST" duration-ms="9626" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Title of your scenario outline"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Title of your feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNgTestRunner@196a42c3]" started-at="2024-08-12T23:39:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-08-12T23:39:11 IST" duration-ms="9337" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive test for submittimg the order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from Ecommerce website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null
+at Srilatha.SeleniumFrameworkDesign.ProductCatalouge.addToCart(ProductCatalouge.java:52)
+at Srilatha.SeleniumFrameworkDesign.StepDefination.StepDefinationImpl.I_add_productname_to_the_cart(StepDefinationImpl.java:39)
+at ✽.I add productname <ProductName> to the cart(file:///C:/Users/intel/eclipse-workspace/SeleniumFrameworkDesign/src/test/java/cucumber/SumbitOrder.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNgTestRunner@196a42c3]" started-at="2024-08-12T23:39:11 IST" name="tearDownClass" finished-at="2024-08-12T23:39:11 IST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.TestNgTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
